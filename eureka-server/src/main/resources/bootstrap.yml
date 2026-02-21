@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: eureka-server
+  cloud:
+    config:
+      uri: http://config-server:8888   # will be used after service discovery, but for bootstrap we need direct URI
+      fail-fast: true
